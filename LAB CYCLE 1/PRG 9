@@ -1,0 +1,23 @@
+public class Palindrome {
+
+    public static void main(String[] args) {
+
+        int num = 121, RI = 0, r, OI;
+
+        OI= num;
+
+        // reversed integer is stored in variable 
+        while( num != 0 )
+        {
+            r = num % 10;
+            RI = RI * 10 + r;
+            num  /= 10;
+        }
+
+        // palindrome if orignalInteger and reversedInteger are equal
+        if (OI == RI)
+            System.out.println(originalInteger + " is a palindrome.");
+        else
+            System.out.println(originalInteger + " is not a palindrome.");
+    }
+}

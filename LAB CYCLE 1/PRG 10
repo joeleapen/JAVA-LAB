@@ -1,0 +1,21 @@
+public class Armstrong {
+
+    public static void main(String[] args) {
+
+        int number = 371, ON, r, result = 0;
+
+        ON = number;
+
+        while (ON != 0)
+        {
+            remainder = ON % 10;
+            result += Math.pow(r, 3);
+            ON /= 10;
+        }
+
+        if(result == number)
+            System.out.println(number + " is an Armstrong number.");
+        else
+            System.out.println(number + " is not an Armstrong number.");
+    }
+}
