@@ -1,0 +1,31 @@
+//Division by TRY AND CATCH
+import java.io.*;
+import java.util.Scanner;
+public class Main{
+  public static void main(String[] args)
+{
+    int a,b;  
+    System.out.println("enter the value of a:");
+    Scanner k=new Scanner(System.in);
+    a=k.nextInt();
+    System.out.println("enter the value of b:");
+    Scanner sc=new Scanner(System.in);
+    b=sc.nextInt();
+
+    try {
+
+        double R =(a/b);
+        System.out.println("The Q is "+ R);
+
+    } 
+    catch (Exception e) 
+    {
+
+        System.out.println("division by zero exception");
+        System.out.println("inside-catch");
+
+    }
+}
+}
+
+
